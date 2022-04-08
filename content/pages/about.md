@@ -45,6 +45,6 @@ menu:
 
 ✍🏽 Mis frases favoritas son:
 
-> "Algún día lo entenderás. Alcanzarás tu meta, descubrirás lo grande que eres y las hazañas tan increíbles que has logrado en el camino. Encontrarás la paz y por fin podrás estar orgulloso de ti mismo. Esa es tu esperanza.” Fernando Trujillo Sáenz 
+> "Algún día lo entenderás. Alcanzarás tu meta, descubrirás lo grande que eres y las hazañas tan increíbles que has logrado en el camino. Encontrarás la paz y por fin podrás estar orgulloso de ti mismo. Esa es tu esperanza.” Fernando Trujillo Sanz 
 
-> “Todos cargamos con alguna cruz, hijo mío. No todas son iguales, la tuya es más pesada, porque tú eres más fuerte, porque puedes soportarla.” Fernando Trujillo Sáenz  
+> “Todos cargamos con alguna cruz, hijo mío. No todas son iguales, la tuya es más pesada, porque tú eres más fuerte, porque puedes soportarla.” Fernando Trujillo Sanz  
