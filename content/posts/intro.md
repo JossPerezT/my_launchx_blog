@@ -52,3 +52,6 @@ En general, no creo que exista un modelo estándar sobre cómo ser y cómo no se
 Respecto a emociones y sentimientos va a variar según el desarrollador, pero es importante aprender a expresarlas con respeto y responsabilidad. 
 
 Los Profesionales de software siemrpe estan actualizándose pero también merecen y necesitan sus descansos. No todo el tiempo deben Estar frente un computador, deben buscar actividades que les gusten y los satisfaga que pueden emplear en su tiempo libre. 
+
+
+¡Debemos buscar el futuro que queremos!
