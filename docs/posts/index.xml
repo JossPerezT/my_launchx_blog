@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jossperezt.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mis expectativas</title>
+      <title>Cultura de un profesional de software</title>
       <link>https://jossperezt.github.io/my_launchx_blog/posts/intro/</link>
-      <pubDate>Mon, 21 Feb 2022 18:16:21 -0600</pubDate>
+      <pubDate>Thu, 07 Apr 2022 18:16:21 -0600</pubDate>
       
       <guid>https://jossperezt.github.io/my_launchx_blog/posts/intro/</guid>
-      <description>Usa este post para anotar tus expectativas de la misión.</description>
+      <description>¡Hola! Bienvenidos a mi primer post en la mision NodeJs. Aquí hablaremos sobre la cultura de un profesional de software.
+En general, no creo que exista un modelo estándar sobre cómo ser y cómo no ser un desarrollador, ya que todo eso es un conjunto de su personalidad, educación y ambiente en el que se desarrolla y desarrolló, estado de ánimo, etc. Sin embargo, si considero que hay algunas características y habilidades que el desarrollador de software debe poseer para ser más accesible, eficaz y comunicativo, como lo son:</description>
     </item>
     
   </channel>
