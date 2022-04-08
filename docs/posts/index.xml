@@ -17,5 +17,17 @@
 En general, no creo que exista un modelo estándar sobre cómo ser y cómo no ser un desarrollador, ya que todo eso es un conjunto de su personalidad, educación y ambiente en el que se desarrolla y desarrolló, estado de ánimo, etc. Sin embargo, si considero que hay algunas características y habilidades que el desarrollador de software debe poseer para ser más accesible, eficaz y comunicativo, como lo son:</description>
     </item>
     
+    <item>
+      <title>Mi viaje por Launch X</title>
+      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_1/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_1/</guid>
+      <description>¡Hola de nuevo 👋🏽! Gracias por leer estos posts. Durante este post te contaré lo que he hecho y aprendido durante los casi 2 meses que llevo en la formación Launch X de Innovaccion Virtual.
+ 🚀 On boarding. 👩🏽‍🏫 Impartido por Fernanda Ochoa, una crack de Innovaccion Virtual.
+Esta fue una introducción a la programación mediante el lenguaje Python donde vimos conocimientos básicos para comenzar a programar.
+Se ejecutaron proyectos básicos para entender como funcionaba la sintaxis del lenguaje.</description>
+    </item>
+    
   </channel>
 </rss>
