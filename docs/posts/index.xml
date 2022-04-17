@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jossperezt.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Mi primera semana </title>
+      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_2/</link>
+      <pubDate>Sat, 16 Apr 2022 18:16:21 -0600</pubDate>
+      
+      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_2/</guid>
+      <description>Mi primera semana. Hola lectores 👋
+Como ya lo leyeron, esta fue mi primera semana en esta misión, la cual consistió y aprendí sobre:
+ La importancia de las herramientas.  Conocimiento de Git y GitHub. Conocimiento de nuestros Sistema Operativo. Conocimiento de nuestro editor de texto.   Aprender a interpretar código. Ser autodidácta.  Importancia de las herramientas❗. La primera cosa que nuestro MissionCommander (MC) @carlogilmar nos enseño fue la importancia de las herramientas, las principales son las de Git, GitHub, la terminal del símbolo de sistema (CMD, PowerShell, Bash, Fish, etc) y el editor de texto (Visual Studio Code, ATOM, entre otros), ya que nos aydudan a hacer un trabajo más eficiente y productivo.</description>
+    </item>
+    
+    <item>
       <title>Cultura de un profesional de software</title>
       <link>https://jossperezt.github.io/my_launchx_blog/posts/intro/</link>
       <pubDate>Thu, 07 Apr 2022 18:16:21 -0600</pubDate>
