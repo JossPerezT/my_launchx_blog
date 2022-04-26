@@ -13,7 +13,7 @@
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_3/</guid>
-      <description>Error 0x00000001 [proceso termiando con el código 1 (0x00000001)]  Hola. Un gusto saludar al lector del otro lado de la pantalla. Tuve un error en la terminal WSL y aquí te digo:
+      <description>Error 0x00000001 [proceso terminado con el código 1 (0x00000001)]  Hola. Un gusto saludar al lector del otro lado de la pantalla. Tuve un error en la terminal WSL y aquí te digo:
  Que hice para llegar a ese error. Mi solución. Mi error.  Mi Sistema Operativo es Windows 10, y en esta nueva travesía empece a usar el Subsistema de Linux en Windows (WSL) con Ubuntu 20.04 e intenté personalizarlo con &amp;ldquo;oh-my-zsh&amp;rdquo;.</description>
     </item>
     
