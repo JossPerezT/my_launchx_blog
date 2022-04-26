@@ -1,7 +1,7 @@
 ---
 title: "Error 0x00000001 en WSL"
 date: 2022-04-25
-description: 'Cómo solucionar ese error'
+description: 'Cómo solucionarlo'
 ---
 # Error 0x00000001
 ```console
