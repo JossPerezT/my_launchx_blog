@@ -6,7 +6,17 @@
     <description>Recent content in Launch X Bitácora de viaje on Bitácora de Viaje de Joss Perez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Apr 2022 18:16:21 -0600</lastBuildDate><atom:link href="https://jossperezt.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jossperezt.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error 0x00000001 en WSL</title>
+      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_3/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_3/</guid>
+      <description>Error 0x00000001 [proceso termiando con el código 1 (0x00000001)]  Hola. Un gusto saludar al lector del otro lado de la pantalla. Tuve un error en la terminal WSL y aquí te digo:
+ Que hice para llegar a ese error. Mi solución. Mi error.  Mi Sistema Operativo es Windows 10, y en esta nueva travesía empece a usar el Subsistema de Linux en Windows (WSL) con Ubuntu 20.04 e intenté personalizarlo con &amp;ldquo;oh-my-zsh&amp;rdquo;.</description>
+    </item>
+    
     <item>
       <title>Mi primera semana </title>
       <link>https://jossperezt.github.io/my_launchx_blog/posts/post_2/</link>

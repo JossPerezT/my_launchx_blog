@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Error 0x00000001 en WSL - Bitácora de Viaje de Joss Perez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://jossperezt.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Cómo solucionar ese error"/>
+    <meta property="og:title" content="Error 0x00000001 en WSL"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://jossperezt.github.io/my_launchx_blog/posts/post_3/"/>
+    
+    <meta property="og:description" content="Cómo solucionar ese error"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Jocelyn77176157"/>
+    <meta name="twitter:creator" content="@Jocelyn77176157"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://jossperezt.github.io/my_launchx_blog/">Bitácora de Viaje de Joss Perez</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-acerca de mi">
+                <a href="../../pages/about/">Acerca de mi</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Error 0x00000001 en WSL<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <h1 id="error-0x00000001">Error 0x00000001</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">  [proceso termiando con el código 1 (0x00000001)]
+</span></code></pre></div><hr>
+<p>Hola. Un gusto saludar al lector del otro lado de la pantalla.
+Tuve un error en la terminal WSL y aquí te digo:</p>
+<ul>
+<li>Que hice para llegar a ese error.</li>
+<li>Mi solución.</li>
+<li>Mi error.</li>
+</ul>
+<p>Mi Sistema Operativo es Windows 10, y en esta nueva travesía empece a usar el Subsistema de Linux en Windows (WSL) con Ubuntu 20.04 e intenté personalizarlo con &ldquo;oh-my-zsh&rdquo;. Pero hubo un error al querer establecerlo como predeterminado no me lo permitía:</p>
+<p><img src="https://user-images.githubusercontent.com/84040594/165224927-a6674eae-90c0-42db-8d29-e3c99e5ef98f.png" alt="error you not change" title="error you not change"></p>
+<p>&ldquo;Tratando&rdquo; de solucionarlo, encontré esto:</p>
+<p><img src="https://user-images.githubusercontent.com/84040594/165225375-c06a29b5-d77d-4b7b-93b1-64d4ac2ad67e.png" alt="posible solución" title="posible solución"> <img src="https://user-images.githubusercontent.com/84040594/165227295-db88a063-07c4-4e5d-8c15-31d295070954.png" alt="posible solución ejecutada" title="posible solución ejecutada"></p>
+<p>Pero solo provocó el error:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">  [proceso termiando con el código 1 (0x00000001)]
+</span></code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/165224298-535875cb-d1b0-46e1-9ba8-22468c35158c.PNG" alt="error" title="error"></p>
+<h1 id="mi-solución">MI SOLUCIÓN</h1>
+<p>Busqué la manera de arreglarlo antes de desinstalar e instalar WSL de nuevo, y, según lo que encontré, es un error que le pasa a muchos en WSL, incluso hay un Issue en GitHub acerca de esto, donde te dan varios consejos que pueden o no servir, así que intenté con varios y mi solucion fue:</p>
+<h2 id="1-abrir-cmd-como-administrador">1. Abrir CMD como administrador.</h2>
+<h2 id="2-ejecutar-el-siguiente-comando">2. Ejecutar el siguiente comando:</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">  wsl --user root -d [distro name]
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/165229826-a02f4a3d-66b7-444e-bd7b-518001b2d838.png" alt="wsl" title="wsl"></p>
+<h3 id="21-esto-hará-que-cmd-sea-usado-por-el-usuario-root-quien-tiene-acceso-administrativo-al-sistema-linux">2.1 Esto hará que CMD sea usado por el usuario root (quien tiene acceso administrativo al sistema Linux)</h3>
+<p><img src="https://user-images.githubusercontent.com/84040594/165229904-d5210b90-3052-45dc-9fd8-34bbeeeaa30d.png" alt="root" title="root"></p>
+<h2 id="3-ejecutarás-el-siguiente-código">3. Ejecutarás el siguiente código.</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">chsh --shell /bin/bash [username]
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/165230008-64f272eb-833d-4255-9327-a8ce2085b05f.png" alt="chsh" title="chsh"></p>
+<h2 id="4-vuelves-a-abrir-tu-terminal-y-listo">4. Vuelves a abrir tu terminal, y listo.</h2>
+<p><img src="https://user-images.githubusercontent.com/84040594/165229636-0408d3c8-61f2-4a3c-baab-1c2cb1014b56.png" alt="solucion" title="solucion"></p>
+<h2 id="5-establecer-shell">5. Establecer shell</h2>
+<p>Solucionado el error  0x00000001, podemos volver a establecer la shell que se tenía, en mi caso, fish.
+<img src="https://user-images.githubusercontent.com/84040594/165231521-d18d5ab8-c49b-444b-8079-3e33e9b16264.png" alt="fish" title="fish"></p>
+<h1 id="mi-error-y-lo-que-aprendírecordé">Mi error y lo que aprendí/recordé</h1>
+<p>El error original, &ldquo;no poder estabelcer una shell como predeterminada&rdquo;, fue a que no supe hacerlo bien y al volver a establecer fish para hacer este post, recordé lo básico de la instalación y que es aplicable para otras shells:</p>
+<p>◾ Primero: se debe cambiar a la shell que se quiere:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">fish | zsh | bash
+</code></pre></div><p>◾ Luego: se ejecuta el comando para que sea prederminada.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">chsh -s /usr/bin/&lt;shell&gt;
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/165233181-b431209d-85ea-47e5-962b-7b3b60be24e5.png" alt="zsh"></p>
+<p>Algo muy sencillo se convirtió en un problema.</p>
+<h1 id="issue">ISSUE</h1>
+<p>Aquí les dejo el link del <a href="https://github.com/microsoft/WSL/issues/4899">Issue</a> de GitHub donde hay más soluciones del mismo problema que pueden probar por si este no les funcionó.</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/jocelyn77176157" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/JossPerezT" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
