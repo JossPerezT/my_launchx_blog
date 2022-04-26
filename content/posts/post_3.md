@@ -5,7 +5,7 @@ description: 'Cómo solucionarlo'
 ---
 # Error 0x00000001
 ```console
-  [proceso termiando con el código 1 (0x00000001)]
+  [proceso terminado con el código 1 (0x00000001)]
 ```
 
 ---
@@ -28,7 +28,7 @@ Mi Sistema Operativo es Windows 10, y en esta nueva travesía empece a usar el S
 Pero solo provocó el error: 
 
 ```console
-  [proceso termiando con el código 1 (0x00000001)]
+  [proceso terminado con el código 1 (0x00000001)]
 ```
 ![error](https://user-images.githubusercontent.com/84040594/165224298-535875cb-d1b0-46e1-9ba8-22468c35158c.PNG "error")
 
