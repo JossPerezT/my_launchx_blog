@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jossperezt.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Segunda semana aprendiendo Backend</title>
+      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_4/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_4/</guid>
+      <description>Hola de nuevo 👋. El día de hoy haremos la recopilación del avance de lo que aprendí la semana 2 de esta mission.
+Los temas principales fueron:
+ ✨Contextos ✨Objetos en JS ✨Operadores ✨Clases y Objetos ✨Modularización de archivos ✨Pruebas Unitarias  💫 Contextos. Los contextos, en programación y palabras simples, es aquel código que se encargan de encapsular comportamientos y que solo existen ahí. Es decir, si creamos una variable, un método, un objeto o lo que sea dentro del contexto, solo existirá ahi y en ningún otro lado.</description>
+    </item>
+    
+    <item>
       <title>Error 0x00000001 en WSL</title>
       <link>https://jossperezt.github.io/my_launchx_blog/posts/post_3/</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
@@ -48,17 +59,6 @@ En general, no creo que exista un modelo estándar sobre cómo ser y cómo no se
  🚀 On boarding. 👩🏽‍🏫 Impartido por Fernanda Ochoa, una crack de Innovaccion Virtual.
 Esta fue una introducción a la programación mediante el lenguaje Python donde vimos conocimientos básicos para comenzar a programar.
 Se ejecutaron proyectos básicos para entender como funcionaba la sintaxis del lenguaje.</description>
-    </item>
-    
-    <item>
-      <title>Segunda semana aprendiendo Backend</title>
-      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_4/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_4/</guid>
-      <description>Hola de nuevo 👋. El día de hoy haremos la recopilación del avance de lo que aprendí la semana 2 de esta mission.
-Los temas principales fueron:
- ✨Contextos ✨Objetos en JS ✨Operadores ✨Clases y Objetos ✨Modularización de archivos ✨Pruebas Unitarias  💫 Contextos. Los contextos, en programación y palabras simples, es aquel código que se encargan de encapsular comportamientos y que solo existen ahí. Es decir, si creamos una variable, un método, un objeto o lo que sea dentro del contexto, solo existirá ahi y en ningún otro lado.</description>
     </item>
     
   </channel>
