@@ -1,6 +1,6 @@
 ---
 title: "Segunda semana aprendiendo Backend"
-date: 2022-01-01
+date: 2022-05-01
 description: 'Recopilación de lo aprendido durante la segunda semana en la Mission Launch X'
 ---
 
