@@ -50,5 +50,16 @@ Esta fue una introducción a la programación mediante el lenguaje Python donde 
 Se ejecutaron proyectos básicos para entender como funcionaba la sintaxis del lenguaje.</description>
     </item>
     
+    <item>
+      <title>Segunda semana aprendiendo Backend</title>
+      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_4/</guid>
+      <description>Hola de nuevo 👋. El día de hoy haremos la recopilación del avance de lo que aprendí la semana 2 de esta mission.
+Los temas principales fueron: ✨Contextos ✨Objetos en JS ✨Operadores ✨Clases y Objetos ✨Modularización de archivos ✨Pruebas Unitarias
+💫 Contextos. Los contextos, en programación y palabras simples, es aquel código que se encargan de encapsular comportamientos y que solo existen ahí. Es decir, si creamos una variable, un método, un objeto o lo que sea dentro del contexto, solo existirá ahi y en ningún otro lado.</description>
+    </item>
+    
   </channel>
 </rss>

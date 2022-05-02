@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Segunda semana aprendiendo Backend - Bitácora de Viaje de Joss Perez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://jossperezt.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Recopilación de lo aprendido durante la segunda semana en la Mission Launch X"/>
+    <meta property="og:title" content="Segunda semana aprendiendo Backend"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://jossperezt.github.io/my_launchx_blog/posts/post_4/"/>
+    
+    <meta property="og:description" content="Recopilación de lo aprendido durante la segunda semana en la Mission Launch X"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Jocelyn77176157"/>
+    <meta name="twitter:creator" content="@Jocelyn77176157"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://jossperezt.github.io/my_launchx_blog/">Bitácora de Viaje de Joss Perez</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-acerca de mi">
+                <a href="../../pages/about/">Acerca de mi</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Segunda semana aprendiendo Backend<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <h1 id="hola--de-nuevo-">Hola  de nuevo 👋.</h1>
+<p>El día de hoy haremos la recopilación del avance de lo que aprendí la semana 2 de esta mission.</p>
+<p>Los temas principales fueron:
+✨Contextos
+✨Objetos en JS
+✨Operadores
+✨Clases y Objetos
+✨Modularización de archivos
+✨Pruebas Unitarias</p>
+<h2 id="-contextos">💫 Contextos.</h2>
+<p>Los contextos, en programación y palabras simples, es aquel código que se encargan de encapsular comportamientos y que solo existen ahí. Es decir, si creamos una variable, un método, un objeto o lo que sea dentro del contexto, solo existirá ahi y en ningún otro lado.
+<img src="https://user-images.githubusercontent.com/84040594/166181724-e360d74e-7ba6-4505-ad79-85716bbd28c9.png" alt="Contextos">&ldquo;Contextos&rdquo;)</p>
+<p>¿Cómo se ve esto en un código? De la siguiente manera:</p>
+<ul>
+<li>
+<p>Esto es declarar las variables en un entorno global:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">let a = `JavaScript`
+</span><span class="go">let b = 10 
+</span></code></pre></div></li>
+<li>
+<p>Aqui las declaramos dentro de un contexto (función, en este caso). Las mismas variables solo estaran disponibles si mandamos a llamar a la función</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">function my_function_to_show_scopes () {
+</span><span class="go">    if (true) {
+</span><span class="go">        let a = `Elixir`
+</span><span class="go">        let b = 999 
+</span><span class="go">        console.log (a, b) 
+</span><span class="go">    }
+</span><span class="go">}
+</span></code></pre></div></li>
+</ul>
+<p>Al mandar a imprimir <strong>console.log (a, b)</strong> nos imprime lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">JavaScript 10
+</span></code></pre></div><p>Pero si ejecutamos la función <strong>my_function_to_show_scopes()</strong> imprime:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">Elixir 999
+</span></code></pre></div><p>Así funcionan los contextos, solo funcionan si mandamos a llamar la parte del código.</p>
+<h2 id="-objetos-en-js">💫 Objetos en JS</h2>
+<p>Los objetos son un conjunto de valores key-value y son usados para diseñar y modelar información para así transformarla. Pueden guardar funciones, métodos, listas y más objetos (objetos anidados).</p>
+<p>Para definir un objeto se usan las llaves <em>{}</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">  const myObject2 = {
+</span><span class="go">      name: &#34;Joss&#34; ,
+</span><span class="go">      age: 23
+</span><span class="go">}
+</span></code></pre></div><p>Al impirmir se tiene que llamar al objeto y su propiedad:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">// (objeto)
+</span><span class="go">console.log (myObject2)
+</span><span class="go">  { name: &#39;Joss&#39;, age: 23 }
+</span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">// (objeto.propiedad)
+</span><span class="go">console.log (myObject2.name)
+</span><span class="go">  Joss
+</span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">// (objeto[&#34;propiedad&#34;])
+</span><span class="go">console.log (myObject2[&#34;age&#34;])
+</span><span class="go">  23
+</span></code></pre></div><p>,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">{ name: &#39;Joss&#39;, age: 23 }
+</span></code></pre></div><p>Podemos tener infinidad de uso con los objetos, podemos tener objetos con métodos(tienen funciones dentro de un objeto), con listas, entre más.</p>
+<blockquote>
+<p>Recuerda: Para llamar un objeto en un método y usarlo debemos hacer uso de <em>this</em> . <em>propiedad</em></p>
+</blockquote>
+<h2 id="-operadores">💫 Operadores</h2>
+<p>Los operadores nos ayudaran a manipular los datos que tenemos de una forma más sencilla. Algunos son:</p>
+<ul>
+<li>For Each:</li>
+<li>Map</li>
+<li>Filter</li>
+<li>Reduce</li>
+<li>Find</li>
+<li>FindIndex</li>
+<li>Some</li>
+<li>Sort</li>
+</ul>
+<h2 id="-clases-y-objetos">💫 Clases y Objetos</h2>
+<h2 id="-modularización-de-archivos">💫 Modularización de archivos</h2>
+<h2 id="-pruebas-unitarias">💫 Pruebas Unitarias</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="err">
+</span></code></pre></div>
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/jocelyn77176157" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/JossPerezT" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
