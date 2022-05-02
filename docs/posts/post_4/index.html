@@ -61,25 +61,27 @@
     <div class="content">
       <h1 id="hola--de-nuevo-">Hola  de nuevo 👋.</h1>
 <p>El día de hoy haremos la recopilación del avance de lo que aprendí la semana 2 de esta mission.</p>
-<p>Los temas principales fueron:
-✨Contextos
-✨Objetos en JS
-✨Operadores
-✨Clases y Objetos
-✨Modularización de archivos
-✨Pruebas Unitarias</p>
+<p>Los temas principales fueron:</p>
+<ul>
+<li>✨Contextos</li>
+<li>✨Objetos en JS</li>
+<li>✨Operadores</li>
+<li>✨Clases y Objetos</li>
+<li>✨Modularización de archivos</li>
+<li>✨Pruebas Unitarias</li>
+</ul>
 <h2 id="-contextos">💫 Contextos.</h2>
-<p>Los contextos, en programación y palabras simples, es aquel código que se encargan de encapsular comportamientos y que solo existen ahí. Es decir, si creamos una variable, un método, un objeto o lo que sea dentro del contexto, solo existirá ahi y en ningún otro lado.
-<img src="https://user-images.githubusercontent.com/84040594/166181724-e360d74e-7ba6-4505-ad79-85716bbd28c9.png" alt="Contextos">&ldquo;Contextos&rdquo;)</p>
+<p>Los contextos, en programación y palabras simples, es aquel código que se encargan de encapsular comportamientos y que solo existen ahí. Es decir, si creamos una variable, un método, un objeto o lo que sea dentro del contexto, solo existirá ahi y en ningún otro lado.</p>
+<p><img src="https://user-images.githubusercontent.com/84040594/166181724-e360d74e-7ba6-4505-ad79-85716bbd28c9.png" alt="Contextos">&ldquo;Contextos&rdquo;)</p>
 <p>¿Cómo se ve esto en un código? De la siguiente manera:</p>
 <ul>
 <li>
-<p>Esto es declarar las variables en un entorno global:</p>
+<p>💥 Así se declaran las variables en un entorno global:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">let a = `JavaScript`
 </span><span class="go">let b = 10 
 </span></code></pre></div></li>
 <li>
-<p>Aqui las declaramos dentro de un contexto (función, en este caso). Las mismas variables solo estaran disponibles si mandamos a llamar a la función</p>
+<p>💥 Aqui las declaramos dentro de un contexto (función, en este caso). Las mismas variables solo estaran disponibles si mandamos a llamar a la función</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">function my_function_to_show_scopes () {
 </span><span class="go">    if (true) {
 </span><span class="go">        let a = `Elixir`
@@ -88,52 +90,132 @@
 </span><span class="go">    }
 </span><span class="go">}
 </span></code></pre></div></li>
+<li>
+<p>💥Al mandar a imprimir <strong>console.log (a, b)</strong> nos imprime lo siguiente:
+<code>console JavaScript 10</code></p>
+</li>
+<li>
+<p>💥Pero si ejecutamos la función <strong>my_function_to_show_scopes()</strong> imprime:
+<code>console Elixir 999</code></p>
+</li>
 </ul>
-<p>Al mandar a imprimir <strong>console.log (a, b)</strong> nos imprime lo siguiente:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">JavaScript 10
-</span></code></pre></div><p>Pero si ejecutamos la función <strong>my_function_to_show_scopes()</strong> imprime:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">Elixir 999
-</span></code></pre></div><p>Así funcionan los contextos, solo funcionan si mandamos a llamar la parte del código.</p>
+<blockquote>
+<p>Así funcionan los contextos, solo funcionan si mandamos a llamar la parte del código.</p>
+</blockquote>
 <h2 id="-objetos-en-js">💫 Objetos en JS</h2>
 <p>Los objetos son un conjunto de valores key-value y son usados para diseñar y modelar información para así transformarla. Pueden guardar funciones, métodos, listas y más objetos (objetos anidados).</p>
-<p>Para definir un objeto se usan las llaves <em>{}</em></p>
+<ul>
+<li>
+<p>💥 Para definir un objeto se usan las llaves <em>{}</em></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">  const myObject2 = {
 </span><span class="go">      name: &#34;Joss&#34; ,
 </span><span class="go">      age: 23
 </span><span class="go">}
-</span></code></pre></div><p>Al impirmir se tiene que llamar al objeto y su propiedad:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">// (objeto)
-</span><span class="go">console.log (myObject2)
-</span><span class="go">  { name: &#39;Joss&#39;, age: 23 }
-</span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">// (objeto.propiedad)
-</span><span class="go">console.log (myObject2.name)
-</span><span class="go">  Joss
-</span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">// (objeto[&#34;propiedad&#34;])
-</span><span class="go">console.log (myObject2[&#34;age&#34;])
-</span><span class="go">  23
-</span></code></pre></div><p>,</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">{ name: &#39;Joss&#39;, age: 23 }
-</span></code></pre></div><p>Podemos tener infinidad de uso con los objetos, podemos tener objetos con métodos(tienen funciones dentro de un objeto), con listas, entre más.</p>
+</span></code></pre></div></li>
+<li>
+<p>💥 Al impirmir se tiene que llamar al objeto y su propiedad:</p>
+<pre><code>```console
+// (objeto)
+console.log (myObject2)
+  { name: 'Joss', age: 23 }
+```
+
+```console
+// (objeto.propiedad)
+console.log (myObject2.name)
+  Joss
+```
+
+```console
+// (objeto[&quot;propiedad&quot;])
+console.log (myObject2[&quot;age&quot;])
+  23
+```
+</code></pre>
+</li>
+</ul>
+<p>Podemos tener infinidad de uso con los objetos, podemos tener objetos con métodos(tienen funciones dentro de un objeto), con listas, entre más.</p>
 <blockquote>
 <p>Recuerda: Para llamar un objeto en un método y usarlo debemos hacer uso de <em>this</em> . <em>propiedad</em></p>
 </blockquote>
 <h2 id="-operadores">💫 Operadores</h2>
 <p>Los operadores nos ayudaran a manipular los datos que tenemos de una forma más sencilla. Algunos son:</p>
 <ul>
-<li>For Each:</li>
-<li>Map</li>
-<li>Filter</li>
-<li>Reduce</li>
-<li>Find</li>
-<li>FindIndex</li>
-<li>Some</li>
-<li>Sort</li>
+<li>💥For Each: recorre una lista de elementos y ejecuta la función por cada uno.</li>
+<li>💥Map: Crea una nueva lista a partir de un recorrido de una función.</li>
+<li>💥Filter: Similar a map, crea una nueva lista de los elementos que cumplan con la función.</li>
+<li>💥Reduce: Funciona como un acumulador (acc). Es una función reductoea sobre una lista y regresa un valor único.</li>
+<li>💥Find: Busca y regresa el primer elemento que cumpla con la función.</li>
+<li>💥FindIndex: Busca y regresa el índice del primer elemento que cumpla con la función. Si no lo cumple devuelve -1</li>
+<li>💥Some: Busca y determina si <strong>al menos un elemento</strong> cumple con la función.</li>
+<li>💥Every: Busca y determina si <strong>TODOS</strong> los elementos cumplen con la función.</li>
+<li>💥Sort: Ordena los elementos.</li>
+<li>💥Includes: Determina si alguna letra, frase, palabra, etc. se encuentra en un elemento.</li>
 </ul>
+<blockquote>
+<p>Recuerda: Una lista es un array en programación.</p>
+</blockquote>
 <h2 id="-clases-y-objetos">💫 Clases y Objetos</h2>
+<p>Las clases son &ldquo;funciones especiales&rdquo;. Son una especie de plantilla para encapsular objetos y poder trabajar con esa información.</p>
+<ul>
+<li>
+<p>💥Para definirlas se requiere el siguente código:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">class nameClass {
+</span><span class="go"></span><span class="err">
+</span><span class="err"></span><span class="go">}
+</span></code></pre></div></li>
+<li>
+<p>💥Los objetos se pueden instanciar de una clase por medio de un constructor,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">    class Student { // Creación de la clase
+</span><span class="go">        constructor (name, age, subjects){ // Se definen los atributos que los objetos tendran por medio de un contructor.
+</span><span class="go">            this.name = name // Se define a que atributo nos referimos.
+</span><span class="go">            this.age = age 
+</span><span class="go">            this.subjects = subjects 
+</span><span class="go">        }
+</span><span class="go">    }
+</span></code></pre></div><ul>
+<li>💢Instanciar un nuevo objeto:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">const jossStudent = new Student (&#34;Joss&#34;, 23, [&#34;NodeJS, Python&#34;]) // Se crea una variable, se usa _new nombreClase_ para refrerirnos a la clase y se le agregan los atributos correspondientes.
+</span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>💥Getters: Es un método que obtiene el valor de una propiedad</p>
+</li>
+<li>
+<p>💥Setters: Método que asigna y actualiza la información de una propiedad.</p>
+</li>
+<li>
+<p>💥Métodos estáticos: nos permiten escribir métodos en una clase sin tener que instanciar un objeto.</p>
+</li>
+<li>
+<p>💥Herencia: Nos permite usar las clases entre ellas y usar sus componentes. Una clase hija puede usar los mismos componentes de la clase padre y agregar más.</p>
+</li>
+</ul>
+<blockquote>
+<p>Mi definición de <strong>instanciar</strong>: Es la manera de crear un nuevo objeto derivado de una clase.</p>
+</blockquote>
 <h2 id="-modularización-de-archivos">💫 Modularización de archivos</h2>
+<p>La modularización de archivo se refiere a la forma de organizar nuestros proyectos y códigos. La modularización nos sirve para fraccionar nuestro código en módulos para que sea más entendible y fácil de leer, importando y exportando los módulos.</p>
+<blockquote>
+<p>El software por naturaleza tiende a ser complejo.</p>
+</blockquote>
 <h2 id="-pruebas-unitarias">💫 Pruebas Unitarias</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="err">
-</span></code></pre></div>
+<ul>
+<li>💥Las pruebas unitarias son muy importantes para nuestros proyectos. Nos ayudan a determinar si nuestro código cumple con los requerimientos necesarios, además de que nos avisan si existe algún error o falla durante su comportamiento.</li>
+<li>💥Hacer pruebas es difícil, pero son necesarias para el buen funcionamiento y optimización del proyecto.</li>
+</ul>
+<blockquote>
+<p>Nunca confies en una prueba que no veas fallar.</p>
+</blockquote>
+<h2 id="más-recursos">Más recursos</h2>
+<p>💥 <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/">Developer Mozzilla</a></p>
+<h1 id="listo">LISTO!!</h1>
+<p>Terminamos la recopilación de la semana 2.</p>
+<p>Espero que este post les sea de ayuda para entender un poco más de los temas desde mi punto de vista, experiencia y entendimiento.</p>
+<p>Si en algún concepto tengo la idea errónea házmelo saber para corregirla.</p>
+<p>Gracias por leer 📖</p>
+
     </div>
   </div>
 
