@@ -14,7 +14,12 @@
       
       <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_5/</guid>
       <description>Hola 👋. El día de hoy haremos la recopilación del avance de lo que se aprendió en la semana 3 de esta mission.
-Temas principales: 💫 Creación de proyectos de JS 💫 TDD para diseño de software 💫 Express JS como framework para crear servers 💫 Creación de un API con Express 💫 Pruebas de endpoints con Postman
+Temas principales:
+💫 Creación de proyectos de JS
+💫 TDD para diseño de software
+💫 Express JS como framework para crear servers
+💫 Creación de un API con Express
+💫 Pruebas de endpoints con Postman
 💫 Creación de proyectos de JS. Para la creación de un proyecto es necesario organizar sus archivos en carpetas, instalar dependencias y versionamiento.</description>
     </item>
     

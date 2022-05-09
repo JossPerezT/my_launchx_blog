@@ -61,12 +61,12 @@
     <div class="content">
       <h1 id="hola-">Hola 👋.</h1>
 <p>El día de hoy haremos la recopilación del avance de lo que se aprendió en la semana 3 de esta mission.</p>
-<p>Temas principales:
-💫 Creación de proyectos de JS
-💫 TDD para diseño de software
-💫 Express JS como framework para crear servers
-💫 Creación de un API con Express
-💫 Pruebas de endpoints con Postman</p>
+<p>Temas principales:</p>
+<p>💫 Creación de proyectos de JS</p>
+<p>💫 TDD para diseño de software</p>
+<p>💫 Express JS como framework para crear servers</p>
+<p>💫 Creación de un API con Express</p>
+<p>💫 Pruebas de endpoints con Postman</p>
 <h2 id="-creación-de-proyectos-de-js">💫 Creación de proyectos de JS.</h2>
 <p>Para la creación de un proyecto es necesario organizar sus archivos en carpetas, instalar dependencias y versionamiento.</p>
 <h3 id="-versionamiento">✨ Versionamiento</h3>
@@ -75,29 +75,110 @@
 <p><img src="https://user-images.githubusercontent.com/84040594/167332066-55e2e2f8-725c-4931-aee7-797cbd685996.png" alt="Nueva Carpeta" title="Nueva Carpeta"></p>
 <h4 id="creación-de-un-repositorio-local">🎇Creación de un repositorio local.</h4>
 <ol>
-<li>Iniciamos un repositorio local con el comando <code>git init</code>
-<img src="https://user-images.githubusercontent.com/84040594/167332169-42c0917d-d459-4ad1-97b1-b7f8e7798d0d.png" alt="repoLocal" title="repoLocal">
-Como observamos, una vez que se crea el repo local se refleja el mensaje de &ldquo;<em>master</em>&rdquo; haciendo referencia a la rama en la que se esta trabajando.
-<img src="https://user-images.githubusercontent.com/84040594/167332384-a80ff5dd-150e-42da-af31-d799d1dc3ff6.png" alt="rama" title="rama"></li>
-<li>Creamos un archivo para comenzar a versionar. En este ejemplo usamos un &lsquo;readme.md&rsquo;
-<img src="https://user-images.githubusercontent.com/84040594/167333386-b78ed7b0-bb31-4dde-ae2c-5d28532a2374.png" alt="readme.md" title="readme.md"></li>
-<li>Agregamos nuestro archivo al Stage Area en git con el comando <code>git add</code>
-<img src="https://user-images.githubusercontent.com/84040594/167334295-5d020f7e-8cbc-475d-a66b-a67a9ea7ad94.png" alt="git add" title="git add"></li>
-<li>Y mandamos nuestro archivo al repo con <code>git commit -m &quot;&lt;mensaje&gt;&quot;</code>
-<img src="https://user-images.githubusercontent.com/84040594/167334445-c282401b-c725-4c25-b254-1c00e6f0065e.png" alt="git commit" title="git commit"></li>
-<li>Listo. Tenemor un repositorio local.</li>
+<li>Iniciamos un repositorio local con el comando</li>
 </ol>
-<h4 id="-conectar-nuestro-repositorio-local-con-uno-remoto">🎇 Conectar nuestro repositorio local con uno remoto.</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">git init
+</span></code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/167332169-42c0917d-d459-4ad1-97b1-b7f8e7798d0d.png" alt="repoLocal" title="repoLocal"></p>
+<p>Como observamos, una vez que se crea el repo local se refleja el mensaje de &ldquo;<em>master</em>&rdquo; haciendo referencia a la rama en la que se esta trabajando.</p>
+<p><img src="https://user-images.githubusercontent.com/84040594/167332384-a80ff5dd-150e-42da-af31-d799d1dc3ff6.png" alt="rama" title="rama"></p>
+<ol start="2">
+<li>
+<p>Creamos un archivo para comenzar a versionar. En este ejemplo usamos un &lsquo;readme.md&rsquo;
+<img src="https://user-images.githubusercontent.com/84040594/167333386-b78ed7b0-bb31-4dde-ae2c-5d28532a2374.png" alt="readme.md" title="readme.md"></p>
+</li>
+<li>
+<p>Agregamos nuestro archivo al Stage Area en git con el comando</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">git add
+</span></code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/167334295-5d020f7e-8cbc-475d-a66b-a67a9ea7ad94.png" alt="git add" title="git add">
+4. Y mandamos nuestro archivo al repo con</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">git commit -m &#34;&lt;mensaje&gt;&#34;
+</span></code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/167334445-c282401b-c725-4c25-b254-1c00e6f0065e.png" alt="git commit" title="git commit">
+5. Listo. Tenemor un repositorio local.</p>
+<h4 id="-creación-de-un-repositorio-remoto">🎇 Creación de un repositorio remoto.</h4>
 <p>Ya tenemos creado nuestro repositorio local, ahora lo vamos a enlazar con uno remoto con GitHub.</p>
 <ol>
-<li>Creamos un repositorio remoto en GitHub. Le damos un nombre a nuestro repositorio remoto, una descripción y le damos a <code>Create repository</code>
-<img src="https://user-images.githubusercontent.com/84040594/167336772-dc3f4435-b8b8-4e7b-b600-1dcf50dcb59f.png" alt="nombre repo remoto">
-<img src="https://user-images.githubusercontent.com/84040594/167336888-878f1f5d-ac11-47a9-b4a0-8bd442cb3ebc.png" alt="Create repository"></li>
+<li>Creamos un repositorio remoto en GitHub. Le damos un nombre a nuestro repositorio remoto, una descripción y le damos a <code>Create repository</code></li>
 </ol>
+<p><img src="https://user-images.githubusercontent.com/84040594/167336772-dc3f4435-b8b8-4e7b-b600-1dcf50dcb59f.png" alt="nombre repo remoto">
+<img src="https://user-images.githubusercontent.com/84040594/167336888-878f1f5d-ac11-47a9-b4a0-8bd442cb3ebc.png" alt="Create repository"></p>
+<ol start="2">
+<li>Tenemos nuestro repositorio remoto creado.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/84040594/167337216-08bec293-178d-472a-983c-54d456de8fe6.png" alt="image"></p>
+<h4 id="conectar-nuestro-repositorio-local-con-uno-remoto">🎇Conectar nuestro repositorio local con uno remoto.</h4>
+<ol>
+<li>Para conectar nuestros repositorios usaremos el comando:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">git remote add origin &lt;link&gt;
+</span></code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/167337687-31eb3885-2f88-4ced-b58b-7238cd135183.png" alt="image"></p>
+<ol start="2">
+<li>Verificamos nuestra conexión con</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">git remote -v
+</span></code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/167337796-e89a2826-8ebc-4b06-9630-f5b6ad806604.png" alt="image"></p>
+<ol start="3">
+<li>
+<p>El link lo podemos encontrar en formato &lsquo;https&rsquo; o &lsquo;ssh&rsquo;
+<img src="https://user-images.githubusercontent.com/84040594/167337572-6b7922a0-0b6c-4865-88cc-aedeee79fc9e.png" alt="image">
+<img src="https://user-images.githubusercontent.com/84040594/167337594-55731c0a-258e-4c4e-bf34-d4e6b9ae532b.png" alt="image"></p>
+</li>
+<li>
+<p>Para cargar los commits de la repo local a GitHub ejecutamos el comando</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">git push origin master
+</span></code></pre></div><p><img src="https://user-images.githubusercontent.com/84040594/167337958-f959c67c-defe-4f0d-9eb2-4344bef70070.png" alt="image"></p>
+<ol start="5">
+<li>Listo!, Podemos ver nuestro repositorio remoto con los cambios creados (en este caso, el readme.md).
+<img src="https://user-images.githubusercontent.com/84040594/167338131-c8bb2cf7-e45f-4e19-a056-188482a5f821.png" alt="image"></li>
+</ol>
+<h3 id="-dependencias">✨ Dependencias</h3>
+<p>Las dependencias son bibliotecas de JavaScript que nos ayduan a ejecutar ciertas acciones. Para iniciarlas y crearlas ejecutamos:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">npm init
+</span></code></pre></div><p>Dicho comando creará el archivo package.json el cual tendrá toda la configuración de nuestros proyectos. Si vemos un package.json en un proyecto sabremos que es de JavaScript.
+Para esta semana usaremos las dependencias de <a href="https://jestjs.io/docs/getting-started">Jest</a> siendo una biblioteca que nos permite escribir y ejecutar tests. También es considera un marco de trabajo por su simplicidad y es usado en pltaformas como airbnb, twitter, spotify, etc.</p>
+<h4 id="-instalando-jest">🎇 Instalando Jest</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">npm install --save-dev jest
+</span></code></pre></div><h4 id="-gitignore">🎇 .gitignore</h4>
+<p>Una vez que instalamos alguna dependencia, se descarga una carpeta que contiene todos los paquetes de NodeJs que suaremos por medio de NPM llamada <em>node_modules</em>. Esta carpeta <strong>NO NECESITA VERSIONARSE</strong> para ello, creamos un archivo <em>.gitignore</em> en la raíz de nuestro proyecto y agregamos la siguiente línea:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">**/node_modules
+</span></code></pre></div><p>Este archivo si se versiona e ignorará cualquier carpeta con ese nombre.</p>
+<h3 id="-modularización">✨ Modularización.</h3>
+<p>Es recomendable dejar los test en una carpeta aparte de nuestro código fuente.
+La modularización busca que nuestro código sea dividido en pequeñas partes para que sea más sencillo de leer, entender y mantener (como ejemplo podemos crear una clase en un archivo, crear un json en otro, etc) y separarlos en carpetas según su función.
+Para que todo funcione en conjunto debemos importar y exportar los elementos necesarios.<br>
+En JavaScript tenemos dos formas de hacerlo:</p>
+<h4 id="-commonjs">🎇 CommonJS</h4>
+<p>Para este método exportamos los modulos que requerimos al final de los archivos:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">// ejemplo.js
+</span><span class="go">module.exports = ejemplo
+</span></code></pre></div><p>E importamos al inicio de otro archivo con:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">// index.js
+</span><span class="go">const ejemplo = require(&#39;./ejemplo&#39;)
+</span></code></pre></div><p>Así podemos hacer uso de los elementos de &lsquo;ejemplo.js&rsquo; en &lsquo;index.js&rsquo; o cualquier otro archivo sin que deban estar en uno mismo.</p>
+<h4 id="-ecmascript-modules-esm">🎇 EcmaScript Modules ESM</h4>
+<p>Para este método le indicamos a cada elemento que lo vamos a exportar al definirlo:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">// ejemplo.js
+</span><span class="go">export class ejemplo {
+</span><span class="go">}
+</span><span class="go">export class ejemplo2 {
+</span><span class="go">}
+</span></code></pre></div><p>Y para importarla, al inicio del nuevo archivo:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="go">//index.js
+</span><span class="go">import * as ejemplos from &#39;./ejemplo.js&#39;
+</span></code></pre></div><p>Decimos que queremos importar todo (por el asterisco * o cada elemento ) como una variable nueva desde la ruta de un archivo.</p>
+<h2 id="-recomendación">✨ Recomendación</h2>
+<p>Si tu VSCode no determina la ubicación conforme la escribes, te recomiendo la extensión <em>Node Require</em> para importar elemntos más fácil.
+<img src="https://user-images.githubusercontent.com/84040594/167343768-ee142ccd-537d-466d-84c8-1c55891ed377.png" alt="image">
+Se instala, y para acceder utiizas <em>Ctrl+shift+1</em> para abrir una ventana y te otorge una lista de todos los archivosy dependencias que hay en tu proyecto.
+<img src="https://user-images.githubusercontent.com/84040594/167343988-729d8ae3-a0b6-4c91-9694-9c7de892b1fd.png" alt="image">
+<img src="https://user-images.githubusercontent.com/84040594/167344336-2676bac5-d6de-484b-81c5-433d47c92949.png" alt="image">
+Y al escoger un archivo te permite escoger en qué método lo quieres hacer: &lsquo;import&rsquo; o &lsquo;require&rsquo;.</p>
 <h4 id="heading">🎇</h4>
 <h4 id="heading-1">🎇</h4>
-<h4 id="heading-2">🎇</h4>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"></code></pre></div>
     </div>
   </div>
 
