@@ -146,7 +146,7 @@ Si tu VSCode no determina la ubicación conforme la escribes, te recomiendo la e
 
 ![image](https://user-images.githubusercontent.com/84040594/167343768-ee142ccd-537d-466d-84c8-1c55891ed377.png)
 
-Escribí un post rápido sobre esto en [Node Require](https://jossperezt.github.io/my_launchx_blog/posts/post_6/)
+Escribí un post rápido sobre esto en [Node Require](https://jossperezt.github.io/my_launchx_blog/posts/post_5/)
 
 
 ## 💫 TDD para diseño de software
