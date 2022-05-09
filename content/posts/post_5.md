@@ -1,6 +1,6 @@
 ---
 title: "Tercera semana aprendiendo Backend"
-date: 2022-05-08
+date: 2022-05-09
 description: 'Recopilación de lo aprendido durante la tercera semana en la Mission Launch X'
 ---
 
@@ -146,14 +146,7 @@ Si tu VSCode no determina la ubicación conforme la escribes, te recomiendo la e
 
 ![image](https://user-images.githubusercontent.com/84040594/167343768-ee142ccd-537d-466d-84c8-1c55891ed377.png)
 
-Se instala, y para acceder utiizas *Ctrl+shift+1* para abrir una ventana y te otorge una lista de todos los archivos y dependencias que hay en tu proyecto. 
-
-![image](https://user-images.githubusercontent.com/84040594/167343988-729d8ae3-a0b6-4c91-9694-9c7de892b1fd.png)
-
-![image](https://user-images.githubusercontent.com/84040594/167344336-2676bac5-d6de-484b-81c5-433d47c92949.png)
-
-Y al elegir un archivo te permite determinar el método para importar: 'import' o 'require'.
-
+Escribí un post rápido sobre esto en [Node Require](https://jossperezt.github.io/my_launchx_blog/posts/post_6/)
 
 
 ## 💫 TDD para diseño de software
