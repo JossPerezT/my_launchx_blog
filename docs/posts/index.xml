@@ -18,9 +18,8 @@ Temas principales:
 💫 Creación de proyectos de JS
 💫 TDD para diseño de software
 💫 Express JS como framework para crear servers
-💫 Creación de un API con Express
-💫 Pruebas de endpoints con Postman
-💫 Creación de proyectos de JS. Para la creación de un proyecto es necesario organizar sus archivos en carpetas, instalar dependencias y versionamiento.</description>
+💫 Creación de proyectos de JS. Para la creación de un proyecto es necesario organizar sus archivos en carpetas, instalar dependencias y versionamiento.
+✨ Versionamiento Recordemos que un buen proyeto necesita versionarse, aquí usmos git y para crear un nuevo proyecto desde cero y versionarlo necesitamos usar los siguientes comandos:</description>
     </item>
     
     <item>
