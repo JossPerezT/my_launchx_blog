@@ -6,22 +6,11 @@
     <description>Recent content in Launch X Bitácora de viaje on Bitácora de Viaje de Joss Perez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jossperezt.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Recomendación: Extensión VSCode: Node Require</title>
-      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_6/</link>
-      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_6/</guid>
-      <description>Extensión VSCode: Node Require Si tu VSCode no determina la ubicación conforme la escribes, te recomiendo la extensión Node Require para importar elemntos más fácil.
-Se instala, y para acceder utiizas Ctrl+shift+1 para abrir una ventana y te otorge una lista de todos los archivosy dependencias que hay en tu proyecto.
-Y al escoger un archivo te permite escoger en qué método lo quieres hacer: &amp;lsquo;import&amp;rsquo; o &amp;lsquo;require&amp;rsquo;.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jossperezt.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tercera semana aprendiendo Backend</title>
       <link>https://jossperezt.github.io/my_launchx_blog/posts/post_5/</link>
-      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_5/</guid>
       <description>Hola 👋. El día de hoy haremos la recopilación del avance de lo que se aprendió en la semana 3 de esta mission.
@@ -31,6 +20,17 @@ Temas principales:
 💫 Express JS como framework para crear servers
 💫 Creación de proyectos de JS. Para la creación de un proyecto es necesario organizar sus archivos en carpetas, instalar dependencias y versionamiento.
 ✨ Versionamiento Recordemos que un buen proyeto necesita versionarse, aquí usmos git y para crear un nuevo proyecto desde cero y versionarlo necesitamos usar los siguientes comandos:</description>
+    </item>
+    
+    <item>
+      <title>Recomendación: Extensión VSCode: Node Require</title>
+      <link>https://jossperezt.github.io/my_launchx_blog/posts/post_6/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jossperezt.github.io/my_launchx_blog/posts/post_6/</guid>
+      <description>Extensión VSCode: Node Require Si tu VSCode no determina la ubicación conforme la escribes, te recomiendo la extensión Node Require para importar elemntos más fácil.
+Se instala, y para acceder utiizas Ctrl+shift+1 para abrir una ventana y te otorge una lista de todos los archivosy dependencias que hay en tu proyecto.
+Y al escoger un archivo te permite escoger en qué método lo quieres hacer: &amp;lsquo;import&amp;rsquo; o &amp;lsquo;require&amp;rsquo;.</description>
     </item>
     
     <item>
