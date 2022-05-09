@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tercera semana aprendiendo Backend - Bitácora de Viaje de Joss Perez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://jossperezt.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Recopilación de lo aprendido durante la tercera semana en la Mission Launch X"/>
+    <meta property="og:title" content="Tercera semana aprendiendo Backend"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://jossperezt.github.io/my_launchx_blog/posts/post_5/"/>
+    
+    <meta property="og:description" content="Recopilación de lo aprendido durante la tercera semana en la Mission Launch X"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Jocelyn77176157"/>
+    <meta name="twitter:creator" content="@Jocelyn77176157"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://jossperezt.github.io/my_launchx_blog/">Bitácora de Viaje de Joss Perez</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-acerca de mi">
+                <a href="../../pages/about/">Acerca de mi</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Tercera semana aprendiendo Backend<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <h1 id="hola-">Hola 👋.</h1>
+<p>El día de hoy haremos la recopilación del avance de lo que se aprendió en la semana 3 de esta mission.</p>
+<p>Temas principales:
+💫 Creación de proyectos de JS
+💫 TDD para diseño de software
+💫 Express JS como framework para crear servers
+💫 Creación de un API con Express
+💫 Pruebas de endpoints con Postman</p>
+<h2 id="-creación-de-proyectos-de-js">💫 Creación de proyectos de JS.</h2>
+<p>Para la creación de un proyecto es necesario organizar sus archivos en carpetas, instalar dependencias y versionamiento.</p>
+<h3 id="-versionamiento">✨ Versionamiento</h3>
+<p>Recordemos que un buen proyeto necesita versionarse, aquí usmos git y para crear un nuevo proyecto desde cero y versionarlo necesitamos usar los siguientes comandos:</p>
+<h4 id="-creación-de-una-carpeta-nueva-en-nuestro-equipo">🎇 Creación de una carpeta nueva en nuestro equipo.</h4>
+<p><img src="https://user-images.githubusercontent.com/84040594/167332066-55e2e2f8-725c-4931-aee7-797cbd685996.png" alt="Nueva Carpeta" title="Nueva Carpeta"></p>
+<h4 id="creación-de-un-repositorio-local">🎇Creación de un repositorio local.</h4>
+<ol>
+<li>Iniciamos un repositorio local con el comando <code>git init</code>
+<img src="https://user-images.githubusercontent.com/84040594/167332169-42c0917d-d459-4ad1-97b1-b7f8e7798d0d.png" alt="repoLocal" title="repoLocal">
+Como observamos, una vez que se crea el repo local se refleja el mensaje de &ldquo;<em>master</em>&rdquo; haciendo referencia a la rama en la que se esta trabajando.
+<img src="https://user-images.githubusercontent.com/84040594/167332384-a80ff5dd-150e-42da-af31-d799d1dc3ff6.png" alt="rama" title="rama"></li>
+<li>Creamos un archivo para comenzar a versionar. En este ejemplo usamos un &lsquo;readme.md&rsquo;
+<img src="https://user-images.githubusercontent.com/84040594/167333386-b78ed7b0-bb31-4dde-ae2c-5d28532a2374.png" alt="readme.md" title="readme.md"></li>
+<li>Agregamos nuestro archivo al Stage Area en git con el comando <code>git add</code>
+<img src="https://user-images.githubusercontent.com/84040594/167334295-5d020f7e-8cbc-475d-a66b-a67a9ea7ad94.png" alt="git add" title="git add"></li>
+<li>Y mandamos nuestro archivo al repo con <code>git commit -m &quot;&lt;mensaje&gt;&quot;</code>
+<img src="https://user-images.githubusercontent.com/84040594/167334445-c282401b-c725-4c25-b254-1c00e6f0065e.png" alt="git commit" title="git commit"></li>
+<li>Listo. Tenemor un repositorio local.</li>
+</ol>
+<h4 id="-conectar-nuestro-repositorio-local-con-uno-remoto">🎇 Conectar nuestro repositorio local con uno remoto.</h4>
+<p>Ya tenemos creado nuestro repositorio local, ahora lo vamos a enlazar con uno remoto con GitHub.</p>
+<ol>
+<li>Creamos un repositorio remoto en GitHub. Le damos un nombre a nuestro repositorio remoto, una descripción y le damos a <code>Create repository</code>
+<img src="https://user-images.githubusercontent.com/84040594/167336772-dc3f4435-b8b8-4e7b-b600-1dcf50dcb59f.png" alt="nombre repo remoto">
+<img src="https://user-images.githubusercontent.com/84040594/167336888-878f1f5d-ac11-47a9-b4a0-8bd442cb3ebc.png" alt="Create repository"></li>
+</ol>
+<h4 id="heading">🎇</h4>
+<h4 id="heading-1">🎇</h4>
+<h4 id="heading-2">🎇</h4>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/jocelyn77176157" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/JossPerezT" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
