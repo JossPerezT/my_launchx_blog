@@ -15,9 +15,6 @@ Temas principales:
 
 💫 Express JS como framework para crear servers
 
-💫 Creación de un API con Express
-
-💫 Pruebas de endpoints con Postman
 
 ## 💫 Creación de proyectos de JS. 
 Para la creación de un proyecto es necesario organizar sus archivos en carpetas, instalar dependencias y versionamiento. 
@@ -146,15 +143,147 @@ Decimos que queremos importar todo (por el asterisco * o cada elemento ) como un
 
 ## ✨ Recomendación 
 Si tu VSCode no determina la ubicación conforme la escribes, te recomiendo la extensión _Node Require_ para importar elemntos más fácil. 
+
 ![image](https://user-images.githubusercontent.com/84040594/167343768-ee142ccd-537d-466d-84c8-1c55891ed377.png)
-Se instala, y para acceder utiizas *Ctrl+shift+1* para abrir una ventana y te otorge una lista de todos los archivosy dependencias que hay en tu proyecto. 
+
+Se instala, y para acceder utiizas *Ctrl+shift+1* para abrir una ventana y te otorge una lista de todos los archivos y dependencias que hay en tu proyecto. 
+
 ![image](https://user-images.githubusercontent.com/84040594/167343988-729d8ae3-a0b6-4c91-9694-9c7de892b1fd.png)
+
 ![image](https://user-images.githubusercontent.com/84040594/167344336-2676bac5-d6de-484b-81c5-433d47c92949.png)
-Y al escoger un archivo te permite escoger en qué método lo quieres hacer: 'import' o 'require'.
 
-#### 🎇
-#### 🎇
+Y al elegir un archivo te permite determinar el método para importar: 'import' o 'require'.
 
+
+
+## 💫 TDD para diseño de software
+
+#### 🎇Configuración de Tests con Jest
+Ya vimos lo que son los TDD que son las pruebas que nos permiten validar el funcionamiento de nuestro código. 
+Un archivo de test debe ser nombrado con un '.test.js' para que sea reconocido como tal. 
+Para configurar las pruebas de jest debemos instalar las dependencias de Jest y modificar algunas líneas del archivo 'package.json':
+
+Linux: 
+  ```Console
+  "test": "node ./node_modules/.bin/jest"
+  ```
+Windows: 
+  ```Console
+  "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+  ```
+De esta manera podemos correr nuestros tests con el comando: 
 ```Console
+npm test test/ejemplo.test.js (ruta)
 ```
+#### 🎇 Formato de una prueba
+![image](https://user-images.githubusercontent.com/84040594/167348982-6db44ac7-d465-48a2-a2e5-f8b5cf3b4ec8.png)
 
+Una prueba esta conformada por: 
+
+◾ _importando el módulo a testear_ : Se debe importar el módulo y su origen para poder usar sus elementos y testearlos.
+
+◾ _describe("" , () => {_ : Se le da una descripción general a nuestro archivo de pruebas. 
+
+◾ _test("", () => {_  : Se escribe una prueba única para cada caso. Pueden existir muchos en un solo archivo. 
+
+◾ _cuerpo_ : Se desglosa el comportamiento que deberia de tener los elementos según ciertas condiciones. 
+
+◾ _expect()_ : Lo que recibimos de esas condiciones. 
+
+◾ _.toBe()_ : Lo que queremos recibir con esa prueba. Esto puede cambiar a _.toEqual, .toMatch, .toMatchObject, .toNotBe, etc_ puede ser consultado en la documentación de [Jest](https://jestjs.io/docs/getting-started)
+
+Si _expect_ y _.toBe_ son iguales, las pruebas habrán pasado, de lo contrario nos informarán del error. 
+
+> Nunca confies en una prueba que no veas fallar. 
+
+#### 🎇 TDD Testing Driven Developer 
+Es una técnica que consiste en modelar primero las pruebas y después crear el código con las funcionalidades necesarias para que pase la prueba. Entre sus ventajas esta en ayudar a delimitar los requerimiento y sus componentes pero éste llega a ser muy complejo porque debemos aprender a ser objetivos con los requerimientos, con lo  que se solicita y con lo que se necesita. 
+Consta de 3 pasos: 
+1. Escribir un test para la funcionalidad que queremos. Si corremos la prueba tendremos un fallo porque no tenemos nada que probar.
+2. Escribir el código necesario para que la prueba pasé y se cumpla lo requerido.
+3. Refactorizar el código. 
+
+> "TODO CÓDIGO DEBE ESTAR RESPALDADO POR PRUEBAS." [@carlogilmar](https://twitter.com/@carlogilmar)
+
+## 💫 Express JS como framework para crear servers
+[Express](https://expressjs.com/es/) es un framework de NodeJs para desarrollo web y APIs (Aplication Programming Interface). Es sencillo y cuenta con muchos métodos http para la creación de servidores que se encargan de exponer lo que hay en nuestras apps. 
+
+#### 🎇 Instalación. 
+Además de las dependencias que hemos visto, es necesario instalar la dependencia de express: 
+```Console
+npm install express --save
+```
+Esto actualizará 'package.json' automáticamente donde indica la instalación y versión de express. 
+#### 🎇 Uso
+1. Debemos importar express a nuestro archivo
+  ```Console
+  const express = require ("express");
+  ```
+2. Debemos indicar que una variable usara express. 
+  ```Console
+  const app = express();
+  ```
+3. Creamos e indicamos en que puerto estará disponile nuestra app
+  ```Console
+  const port = 3000 // localhost/3000
+  ```
+4. Comenzamos a usar los métodos http.
+  ```Console
+  app.get('/', (request, response) => {
+  response.send("Hola Mundo") });
+  ```
+5. Enviamos los paths para que se peudan visualizar. 
+  ```Console
+  app.listen(port, () => {
+  console.log(`Puerto : ${port}`) 
+  }
+  ```
+6. Ejecutamos: 
+  ```Console
+  node archivo.js
+  ```
+  Ingresamos al path que establecimos y debemos encontrar el mensaje enviado. 
+  ```Console
+  localhost:port | localhost:3000
+  ```
+#### 🎇 Estructura. 
+
+◾ _app_: Es la variable que definimos que sería ocupada por express ('const app = express();)
+
+◾ _.get_ : Es el método http que se esta usando, pueden cambiarse por PUT, DELETE, PUSH, etc. 
+
+◾ _'/'_: Es la ruta del endpoint, se pueden diversas rutas como: '/v1/explorers/mission'.
+
+◾ _request_: Es lo que recibimos del endpoint, puede ser una solicitud o Query Params (parámetros requeridos) 
+
+◾ _response_: Es la respuesta que envíamos al servidor, lo que se muestra en la web al usar las rutas (path).
+
+#### 🎇 Métodos HTTP
+
+Existen varios métodos HTTP, entre los más usados son: 
+
+◾ GET: Regresa información. 
+
+◾ POST: Crea información. 
+
+◾ PUT: Actualiza la información. 
+
+◾ DELETE: Elimina la información. 
+
+#### 🎇 Status de los Métodos 
+
+Si los métodos son ejecutados correctamnete,regresa un código de status. 
+
+◾ 200. Para GET, PUT y DELETE. 
+
+◾ 201. Para POST
+
+
+## TERMINAMOS. 
+Se termino la semana 3 y esto fue un resumen de lo que se aprendio durante ese tiempo. 
+
+Se van relacionando los primero temas y existe una secuencia en cada cosa que se ha aprendido, que no pueden saltarse. 
+
+Sigo con mi autocrítica de organizar mejor mi tiempo, aunque si siento que he avanzado en ese sentido, como todo, es un proceso que lleva tiempo y disciplina. 
+
+Vuelvo a agradecr a [@carlogilmar](https://twitter.com/@carlogilmar) por su forma de enseñar y esmero que pone a cada clase y práctica que nos brinda. Los ejemplos que muestro son derivados a los ejercicios que brinda. 
